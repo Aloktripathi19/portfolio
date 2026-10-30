@@ -32,7 +32,7 @@ export default function Projects() {
               Built on my <span className="font-serif font-normal italic">own</span> time.
             </>
           }
-          aside="Open-source work from GitHub — AI assistants, typed APIs, full-stack apps and developer tooling."
+          aside="Open-source work from GitHub: AI assistants, typed APIs, full-stack apps and developer tooling."
         />
 
         <div className="hidden grid-cols-12 gap-4 border-b border-ink pb-3 font-mono text-[11px] tracking-[0.16em] text-muted uppercase md:grid">

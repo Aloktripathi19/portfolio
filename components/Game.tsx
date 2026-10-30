@@ -542,7 +542,7 @@ export default function Game() {
             <div className="flex items-center justify-between gap-4 border-b border-ink bg-ink px-4 py-2.5 font-mono text-[11px] tracking-[0.12em] text-paper/70 uppercase">
               <span className="flex items-center gap-2">
                 <span className={`h-2 w-2 rounded-full ${phase === "running" ? "animate-pulse bg-[#c8f169]" : phase === "over" ? "bg-signal" : "bg-paper/40"}`} />
-                deploy-dash <span className="text-paper/40">— main</span>
+                deploy-dash <span className="text-paper/40">/ main</span>
               </span>
               <span className="hidden sm:inline">
                 Space / tap to jump · hold for higher
@@ -634,13 +634,13 @@ export default function Game() {
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-ink px-4 py-3 font-mono text-[11px] tracking-[0.1em] text-muted uppercase">
               <span className="flex items-center gap-2">
-                <span className="inline-block h-3 w-4 rounded-full bg-ink" /> Bug — jump it
+                <span className="inline-block h-3 w-4 rounded-full bg-ink" /> Bug: jump it
               </span>
               <span className="flex items-center gap-2">
-                <span className="inline-block h-4 w-2.5 bg-[repeating-linear-gradient(135deg,#ff4f1f_0_3px,#111110_3px_6px)]" /> Merge conflict — jump high
+                <span className="inline-block h-4 w-2.5 bg-[repeating-linear-gradient(135deg,#ff4f1f_0_3px,#111110_3px_6px)]" /> Merge conflict: jump high
               </span>
               <span className="flex items-center gap-2">
-                <span className="grid h-4 w-4 place-items-center rounded-[4px] border border-ink bg-paper text-[7px] text-ink">PY</span> Tech keycap — +25
+                <span className="grid h-4 w-4 place-items-center rounded-[4px] border border-ink bg-paper text-[7px] text-ink">PY</span> Tech keycap: +25
               </span>
               <span className="ml-auto hidden md:inline">Every 300 pts ships a new version 🚀</span>
             </div>

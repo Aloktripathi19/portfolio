@@ -37,7 +37,7 @@ export default function Experience() {
               The <span className="font-serif font-normal italic">commit</span> history.
             </>
           }
-          aside="Every bullet from my résumé, read like a changelog — because that's how the work actually lands."
+          aside="Every bullet from my résumé, written like a changelog. That's how the work actually ships."
         />
 
         <Reveal>

@@ -107,7 +107,7 @@ export default function Preloader() {
             <div className="pl-fade flex items-center justify-between gap-4 font-mono text-[11px] tracking-[0.2em] text-paper/50 uppercase">
               <span className="flex items-center gap-2">
                 <span className="pl-pulse inline-block h-2 w-2 bg-signal" />
-                Portfolio — 2026
+                Portfolio · 2026
               </span>
               <span className="hidden sm:inline">Full-stack · AI · Cloud</span>
               <span>India</span>
@@ -143,7 +143,7 @@ export default function Preloader() {
             <div>
               <div className="flex items-end justify-between gap-6">
                 <span className="pl-fade mb-3 font-serif text-xl text-paper/60 italic md:text-3xl" style={{ animationDelay: "300ms" }}>
-                  building, shipping —
+                  building &amp; shipping
                 </span>
                 <span className="font-display text-[22vw] leading-[0.78] font-bold tracking-[-0.06em] tabular-nums md:text-[13vw]">
                   <span className="pl-count" />

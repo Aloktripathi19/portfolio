@@ -60,7 +60,7 @@ function Word({
 const principles = [
   ["Own it end to end", "Design review → schema → API → UI → container → release. No hand-offs into the void."],
   ["Fast by default", "Server-rendered, SEO-first pages and tuned Postgres queries that hold up as usage scales."],
-  ["Grounded AI", "LLM features that cite their sources — embeddings, pgvector and similarity search, not guesswork."],
+  ["Grounded AI", "LLM features that cite their sources, built on embeddings, pgvector and similarity search instead of guesswork."],
 ];
 
 export default function About() {
@@ -80,12 +80,12 @@ export default function About() {
 
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-8">
-            <ScrollLitText text="I'm a full-stack engineer and AWS Certified Developer shipping production web apps used by 10,000+ people. I take features end to end — SEO-optimized React and Next.js frontends, Python and Node.js APIs, and PostgreSQL models for real business workflows, deployed as containers on AWS." />
+            <ScrollLitText text="I'm a full-stack engineer and AWS Certified Developer shipping production web apps used by 10,000+ people. I take features end to end: SEO-optimized React and Next.js frontends, Python and Node.js APIs, and PostgreSQL models for real business workflows, deployed as containers on AWS." />
             <Reveal className="mt-10 max-w-2xl text-lg leading-relaxed text-ink-soft">
               <p>
                 Most recently I was a Software Engineer at <span className="text-ink">MandS Consulting</span> (May 2025 – Nov 2026), owning features
                 on three client products, including <span className="text-ink">Braided</span> (5,500+ users) and{" "}
-                <span className="text-ink">Hey Coach</span> (4,000+ users, growing monthly) — and partnering with product
+                <span className="text-ink">Hey Coach</span> (4,000+ users, growing monthly), partnering with product
                 and design from the first review to the production release.
               </p>
             </Reveal>

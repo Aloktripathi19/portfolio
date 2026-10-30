@@ -18,7 +18,7 @@ const rag = [
 function RagDiagram() {
   return (
     <div className="mt-10">
-      <p className="mb-4 font-mono text-[11px] tracking-[0.16em] text-paper/40 uppercase">Fig. 1 — Production RAG pipeline</p>
+      <p className="mb-4 font-mono text-[11px] tracking-[0.16em] text-paper/40 uppercase">Fig. 1: Production RAG pipeline</p>
       <ol className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-paper/15 bg-paper/15 sm:grid-cols-3">
         {rag.map(([n, k, v], i) => (
           <motion.li
@@ -54,7 +54,7 @@ function SurfaceDiagram() {
   ];
   return (
     <div className="mt-10">
-      <p className="mb-4 font-mono text-[11px] tracking-[0.16em] text-paper/40 uppercase">Fig. 2 — One product, three surfaces</p>
+      <p className="mb-4 font-mono text-[11px] tracking-[0.16em] text-paper/40 uppercase">Fig. 2: One product, three surfaces</p>
       <div className="grid gap-px overflow-hidden rounded-lg border border-paper/15 bg-paper/15 sm:grid-cols-3">
         {surfaces.map(([k, v], i) => (
           <motion.div
@@ -137,7 +137,7 @@ export default function Work() {
               In production, <span className="font-serif font-normal italic text-signal">used by thousands.</span>
             </>
           }
-          aside="Client products I built and owned at MandS Consulting — web, mobile and AI, shipped from design review to release."
+          aside="Client products I built and owned at MandS Consulting: web, mobile and AI, shipped from design review to release."
         />
         {featuredWork.map((w, i) => (
           <Case key={w.name} w={w} index={i} />

@@ -78,7 +78,7 @@ export default function Credentials() {
         />
 
         <div className="grid gap-6 lg:grid-cols-12">
-          {/* AWS ticket — sticky so it doesn't stretch to the list's height */}
+          {/* AWS ticket: sticky so it doesn't stretch to the list's height */}
           <div className="lg:col-span-5 lg:self-start lg:sticky lg:top-24">
             <motion.div
               initial={{ opacity: 0, rotate: -6, y: 40 }}
@@ -100,7 +100,7 @@ export default function Credentials() {
                     <br />
                     Developer
                   </p>
-                  <p className="mt-3 font-serif text-3xl italic">— Associate</p>
+                  <p className="mt-3 font-serif text-3xl italic">Associate</p>
                 </div>
 
                 <dl className="grid grid-cols-2 border-t border-ink/40 font-mono text-[11px] tracking-[0.1em] uppercase">
@@ -117,7 +117,7 @@ export default function Credentials() {
                   ))}
                 </dl>
                 <p className="mt-4 font-mono text-[10px] tracking-[0.14em] text-ink/60 uppercase">
-                  Domains — Develop · Secure · Deploy · Troubleshoot &amp; optimize
+                  Domains: Develop · Secure · Deploy · Troubleshoot &amp; optimize
                 </p>
 
                 <Stamp />

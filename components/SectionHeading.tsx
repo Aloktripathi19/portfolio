@@ -18,7 +18,7 @@ export default function SectionHeading({ index, eyebrow, title, aside, dark }: P
           <span>
             <span className="text-signal">§{index}</span> &nbsp;{eyebrow}
           </span>
-          <span className="hidden sm:inline">Alok Ram Tripathi — Portfolio</span>
+          <span className="hidden sm:inline">Alok Ram Tripathi · Portfolio</span>
         </div>
       </Reveal>
       <div className="mt-8 grid gap-6 md:grid-cols-12 md:items-end">

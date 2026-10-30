@@ -8,7 +8,7 @@ const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", style: ["nor
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono-f", display: "swap" });
 const body = Inter_Tight({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
-const title = `${profile.name} — ${profile.role}`;
+const title = `${profile.name} | ${profile.role}`;
 const description =
   "Full-stack software engineer and AWS Certified Developer shipping production Next.js, Python and PostgreSQL apps used by 10,000+ people, including RAG pipelines with pgvector.";
 

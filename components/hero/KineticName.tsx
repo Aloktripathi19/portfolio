@@ -77,7 +77,7 @@ export default function KineticName({ play, aside }: Props) {
         level[i] += (targets[i] - level[i]) * 0.14;
         const k = level[i];
         el.style.fontWeight = String(Math.round(BASE + (PEAK - BASE) * k));
-        // Snap to signal near the peak (a CSS transition softens it) — blending black→orange reads as brown.
+        // Snap to signal near the peak (a CSS transition softens it), since blending black→orange reads as brown.
         const hot = k > 0.62;
         if (hot !== (el.dataset.hot === "1")) {
           el.dataset.hot = hot ? "1" : "0";

@@ -46,7 +46,7 @@ export const experience: Experience[] = [
   {
     role: "Software Engineer",
     company: "MandS Consulting",
-    period: "May 2025 — Nov 2026",
+    period: "May 2025 – Nov 2026",
     type: "Full-time",
     highlights: [
       "Drove end-to-end ownership of features for three client products, including Braided (5,500+ users) and Hey Coach (4,000+ users, growing monthly), from design review to production release.",
@@ -76,7 +76,7 @@ export const experience: Experience[] = [
   {
     role: "MERN Stack Developer Intern",
     company: "Vector India Pvt. Ltd.",
-    period: "Jun 2024 — Mar 2025",
+    period: "Jun 2024 – Mar 2025",
     type: "Internship",
     highlights: [
       "Engineered full-stack applications with MongoDB, Express.js, React.js, and Node.js, implementing JWT authentication, CRUD REST APIs, and client-side routing.",
@@ -144,7 +144,7 @@ const gh = (r: string) => `https://github.com/Aloktripathi19/${r}`;
 
 export const projects: Project[] = [
   {
-    name: "Docent — RAG Knowledge Assistant",
+    name: "Docent: RAG Knowledge Assistant",
     description:
       "Chat with your documents and get answers with receipts. Upload PDFs, text or Markdown; answers are grounded only in your files, streamed in real time, and every claim links back to the exact passage and page. Choose OpenAI GPT or Claude on AWS Bedrock.",
     stack: ["Next.js 15", "FastAPI", "pgvector", "OpenAI", "AWS Bedrock", "Tailwind 4"],
@@ -179,7 +179,7 @@ export const projects: Project[] = [
     category: "Full-Stack",
   },
   {
-    name: "Spin-Cycle — Laundry Platform",
+    name: "Spin-Cycle: Laundry Platform",
     description:
       "Marketplace to browse laundry shops, compare services and prices, and contact owners via WhatsApp or phone, with an admin dashboard to verify and approve listings.",
     stack: ["MongoDB", "Express", "React", "Node.js"],
@@ -240,14 +240,14 @@ export const certifications: { title: string; issuer: string; highlight?: boolea
   { title: "Claude with Amazon Bedrock", issuer: "Anthropic Academy · Aug 2026", tag: "AI · AWS" },
   { title: "Frontend Developer (React)", issuer: "HackerRank · Mar 2025 · ID F7B45AE4CB72" },
   { title: "MERN Stack Full-Stack Web Development Training", issuer: "Vector India Pvt. Ltd." },
-  { title: "AI/ML for Geodata Analysis — Participation", issuer: "ISRO" },
+  { title: "AI/ML for Geodata Analysis (Participation)", issuer: "ISRO" },
 ];
 
 export const education = {
   degree: "B.Tech, Information Technology",
   school: "Mahakal Institute of Technology",
   location: "Ujjain, Madhya Pradesh",
-  period: "Aug 2019 — May 2023",
+  period: "Aug 2019 – May 2023",
   grade: "CGPA 7.50 / 10",
 };
 
