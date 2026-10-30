@@ -5,6 +5,7 @@ import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import { profile } from "@/lib/data";
 import { usePreloaderDone } from "./Preloader";
 import { ease } from "./Reveal";
+import EmailMenu from "./EmailMenu";
 import DotField from "./hero/DotField";
 import KineticName from "./hero/KineticName";
 import Stickers from "./hero/Stickers";
@@ -67,7 +68,7 @@ export default function Hero() {
 
   const meta = [
     ["Role", "Full-stack software engineer"],
-    ["Based", "India — open to remote"],
+    ["Based", "India, open to remote"],
     ["Status", "Available for new opportunities"],
   ];
 
@@ -134,7 +135,7 @@ export default function Hero() {
           >
             <span className="italic">Engineer shipping</span> <RotatingWord />
             <br />
-            <span className="italic text-ink-soft">— from database schema to deployed container.</span>
+            <span className="italic text-ink-soft">from database schema to deployed container.</span>
           </motion.p>
 
           <motion.div
@@ -150,12 +151,23 @@ export default function Hero() {
               See the work
               <span className="transition-transform group-hover:translate-x-1">→</span>
             </a>
-            <a
-              href={`mailto:${profile.email}`}
-              className="inline-flex items-center rounded-full border border-ink px-6 py-4 font-mono text-xs tracking-[0.14em] uppercase transition hover:bg-ink hover:text-paper"
-            >
-              Email me
-            </a>
+            <EmailMenu
+              placement="top"
+              align="end"
+              trigger={({ toggle, open }) => (
+                <button
+                  type="button"
+                  onClick={toggle}
+                  aria-haspopup="menu"
+                  aria-expanded={open}
+                  className={`inline-flex items-center rounded-full border border-ink px-6 py-4 font-mono text-xs tracking-[0.14em] uppercase transition hover:bg-ink hover:text-paper ${
+                    open ? "bg-ink text-paper" : ""
+                  }`}
+                >
+                  Email me
+                </button>
+              )}
+            />
           </motion.div>
         </div>
       </div>

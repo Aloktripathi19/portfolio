@@ -5,9 +5,10 @@ import { motion, useMotionValue, useSpring } from "motion/react";
 import { profile } from "@/lib/data";
 import { MaskLine } from "./Reveal";
 import Reveal from "./Reveal";
+import EmailMenu from "./EmailMenu";
 
-function Magnetic({ children, href }: { children: React.ReactNode; href: string }) {
-  const ref = useRef<HTMLAnchorElement>(null);
+function Magnetic({ children, onClick, open }: { children: React.ReactNode; onClick: () => void; open: boolean }) {
+  const ref = useRef<HTMLButtonElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const sx = useSpring(x, { stiffness: 200, damping: 15 });
@@ -24,9 +25,12 @@ function Magnetic({ children, href }: { children: React.ReactNode; href: string 
   };
 
   return (
-    <motion.a
+    <motion.button
       ref={ref}
-      href={href}
+      type="button"
+      onClick={onClick}
+      aria-haspopup="menu"
+      aria-expanded={open}
       onMouseMove={onMove}
       onMouseLeave={reset}
       style={{ x: sx, y: sy }}
@@ -36,7 +40,7 @@ function Magnetic({ children, href }: { children: React.ReactNode; href: string 
       <span className="relative font-mono text-xs tracking-[0.18em] uppercase transition-colors group-hover:text-paper">
         {children}
       </span>
-    </motion.a>
+    </motion.button>
   );
 }
 
@@ -77,7 +81,15 @@ export default function Contact() {
             </MaskLine>
             <MaskLine delay={0.2}>real.</MaskLine>
           </h2>
-          <Magnetic href={`mailto:${profile.email}`}>Say hello →</Magnetic>
+          <EmailMenu
+            placement="top"
+            align="end"
+            trigger={({ toggle, open }) => (
+              <Magnetic onClick={toggle} open={open}>
+                Say hello →
+              </Magnetic>
+            )}
+          />
         </div>
 
         <div className="mt-20 grid gap-10 border-t border-paper/15 pt-10 md:grid-cols-12">
