@@ -46,17 +46,17 @@ export const experience: Experience[] = [
   {
     role: "Software Engineer",
     company: "MandS Consulting",
-    period: "May 2025 — Present",
+    period: "May 2025 — Nov 2026",
     type: "Full-time",
     highlights: [
-      "Drive end-to-end ownership of features for three client products, including Braided (5,500+ users) and Hey Coach (4,000+ users, growing monthly), from design review to production release.",
+      "Drove end-to-end ownership of features for three client products, including Braided (5,500+ users) and Hey Coach (4,000+ users, growing monthly), from design review to production release.",
       "Built a production RAG pipeline on Braided using OpenAI embeddings and a pgvector store, with semantic chunking and similarity search to ground LLM responses in product data, cut hallucinations, and stream cited answers to users.",
-      "Engineer SEO-optimized, server-rendered interfaces in Next.js and React, strengthening search crawlability and cutting page-load times on high-traffic product pages.",
+      "Engineered SEO-optimized, server-rendered interfaces in Next.js and React, strengthening search crawlability and cutting page-load times on high-traffic product pages.",
       "Architected a shared library of reusable, responsive Tailwind CSS components that accelerates feature delivery and enforces one design system across products.",
       "Architected and optimized PostgreSQL schemas, indexes, and queries powering complex business workflows, driving faster query responses and stronger reliability as usage scales.",
-      "Engineer backend services and REST APIs in Python that power data exchange across the frontend, backend, and database layers for 10,000+ combined users.",
+      "Engineered backend services and REST APIs in Python that powered data exchange across the frontend, backend, and database layers for 10,000+ combined users.",
       "Delivered a cross-platform mobile app in Flutter with a responsive UI and full REST API integration.",
-      "Overhaul legacy modules to eliminate technical debt and accelerate page loads, partnering with product and design to scope and ship requirements on time.",
+      "Overhauled legacy modules to eliminate technical debt and accelerate page loads, partnering with product and design to scope and ship requirements on time.",
     ],
     stack: ["Next.js", "React", "Python", "PostgreSQL", "pgvector", "OpenAI", "Tailwind CSS", "Flutter", "AWS", "Docker"],
     stackGroups: [

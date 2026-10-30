@@ -46,7 +46,6 @@ const jsonLd = {
   name: profile.name,
   jobTitle: profile.role,
   email: `mailto:${profile.email}`,
-  worksFor: { "@type": "Organization", name: "MandS Consulting" },
   alumniOf: "Mahakal Institute of Technology",
   sameAs: [profile.socials.github, profile.socials.linkedin, profile.socials.hackerrank],
 };

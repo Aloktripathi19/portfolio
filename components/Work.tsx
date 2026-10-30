@@ -137,7 +137,7 @@ export default function Work() {
               In production, <span className="font-serif font-normal italic text-signal">used by thousands.</span>
             </>
           }
-          aside="Client products I build and own at MandS Consulting — web, mobile and AI, shipped from design review to release."
+          aside="Client products I built and owned at MandS Consulting — web, mobile and AI, shipped from design review to release."
         />
         {featuredWork.map((w, i) => (
           <Case key={w.name} w={w} index={i} />

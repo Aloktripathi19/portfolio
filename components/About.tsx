@@ -83,7 +83,7 @@ export default function About() {
             <ScrollLitText text="I'm a full-stack engineer and AWS Certified Developer shipping production web apps used by 10,000+ people. I take features end to end — SEO-optimized React and Next.js frontends, Python and Node.js APIs, and PostgreSQL models for real business workflows, deployed as containers on AWS." />
             <Reveal className="mt-10 max-w-2xl text-lg leading-relaxed text-ink-soft">
               <p>
-                Today I&apos;m a Software Engineer at <span className="text-ink">MandS Consulting</span>, owning features
+                Most recently I was a Software Engineer at <span className="text-ink">MandS Consulting</span> (May 2025 – Nov 2026), owning features
                 on three client products, including <span className="text-ink">Braided</span> (5,500+ users) and{" "}
                 <span className="text-ink">Hey Coach</span> (4,000+ users, growing monthly) — and partnering with product
                 and design from the first review to the production release.
